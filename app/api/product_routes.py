@@ -12,3 +12,11 @@ def create_product():
 router.put("/products")
 def update_product():
     return{"message":"product updated"}
+
+router.put("/products")
+def delete_product():
+    return{"message":"product deleted"}
+
+router.delete("/products")
+def delete_product():
+    return{"message":"product deleted"}
