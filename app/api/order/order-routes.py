@@ -1,19 +1,19 @@
-from fastapi import order_router
+from fastapi import APIRouter
 
-order = order_router()
+order = APIRouter()
 
-order.get("/orders")
+@order.get("/orders")
 def get_order():
     return["order","order"]
 
-order.post("/orders")
+@order.post("/orders")
 def post_order():
     return{"message":"order created"}
 
-order.put("/orders")
+@order.put("/orders")
 def update_order():
     return
 
-order.delete("/orders")
+@order.delete("/orders")
 def delete_order():
     return{"message":"order deleted"}

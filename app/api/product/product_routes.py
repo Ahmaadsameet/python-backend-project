@@ -5,22 +5,22 @@ router = APIRouter()
 def get_product():
     return["item","item"]
 
-router.get("/products"/{id})
+@router.get("/products"/{id})
 def get_product(id:int):
     return{"item_id":id,"name":"item name"}
 
-router.post("/products")
+@router.post("/products")
 def create_product():
     return{"message":"product created"}
 
-router.put("/products")
+@router.put("/products")
 def update_product():
     return{"message":"product updated"}
 
-router.put("/products")
+@router.delete("/products")
 def delete_product():
     return{"message":"product deleted"}
 
-router.delete("/products")
+@router.delete("/products")
 def delete_product():
     return{"message":"product deleted"}

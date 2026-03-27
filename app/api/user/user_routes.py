@@ -1,19 +1,19 @@
-from fastapi import user_router
+from fastapi import APIRouter
 
-user = user_router()
+user = APIRouter()
 
-user.get("/users")
+@user.get("/users")
 def get_user():
     return["user","user"]
 
-user.post("/users")
+@user.post("/users")
 def post_user():
     return{"message":"user created"}
 
-user.put("/users")
+@user.put("/users")
 def update_user():
     return{"message":"user updated"}
 
-user.delete("/users")
+@user.delete("/users")
 def delete_user():
     return{"message":"user deleted"}
