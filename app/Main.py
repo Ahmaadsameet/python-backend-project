@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.product.product_routes import product 
+from app.api.product.product_routes import router as product
 from app.api.user.user_routes import user 
 from app.api.order.order_routes import order 
 

@@ -5,7 +5,7 @@ router = APIRouter()
 def get_product():
     return["item","item"]
 
-@router.get("/products"/{id})
+@router.get("/products/{id}")
 def get_product(id:int):
     return{"item_id":id,"name":"item name"}
 
