@@ -5,6 +5,10 @@ router = APIRouter()
 def get_product():
     return["item","item"]
 
+router.get("/products"/{id})
+def get_product(id:int):
+    return{"item_id":id,"name":"item name"}
+
 router.post("/products")
 def create_product():
     return{"message":"product created"}
