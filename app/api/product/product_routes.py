@@ -20,7 +20,3 @@ def update_product():
 @router.delete("/products")
 def delete_product():
     return{"message":"product deleted"}
-
-@router.delete("/products")
-def delete_product():
-    return{"message":"product deleted"}
