@@ -30,10 +30,10 @@ def create_product(self, data :str, price: float):
     
     return new_product 
 
-def update_product(self,product_id:int,name:str):
+def update_product(self,id,data):
     for product in self.product_db:
-        if product["id"] == product_id:
-            product["name"] = name
+        if product["id"] == id:
+            product.update(data)
             return product
     return {"message": "product not found"}
 
