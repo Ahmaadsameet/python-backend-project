@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.api.product.product_service import productService
+from app.services.product_service import productService
 service = productService()
  
 router = APIRouter()
